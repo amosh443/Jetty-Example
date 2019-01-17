@@ -14,7 +14,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <org.eclipse.jetty.version>9.4.14.v20181114</org.eclipse.jetty.version>
         <gson>2.8.5</gson>
-        <mysql>8.0.13</mysql>
+        <mysql>5.1.37</mysql>
     </properties>
 
     <build>
@@ -61,9 +61,11 @@
             <version>${mysql}</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.5.0</version>
+        </dependency>
 
     </dependencies>
-
-
 </project>

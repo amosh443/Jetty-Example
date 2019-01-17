@@ -1,7 +1,6 @@
 package ru.project.server.servlets;
 
 import com.google.gson.Gson;
-import com.sun.istack.internal.NotNull;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
@@ -19,7 +18,6 @@ public abstract class BaseServlet extends HttpServlet {
 
     abstract String getPath();
 
-    @NotNull
     public String getUrl() {
         return URL + getPath();
     }
